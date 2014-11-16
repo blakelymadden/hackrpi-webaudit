@@ -1,0 +1,14 @@
+Flask==0.10.1
+Flask-Bootstrap==3.3.0.1
+Jinja2==2.7.3
+MarkupSafe==0.23
+Werkzeug==0.9.6
+argparse==1.2.1
+colorama==0.2.5
+html5lib==0.999
+itsdangerous==0.24
+reportlab==3.0
+requests==2.2.1
+simplejson==3.6.5
+virtualenv==1.11.6
+virtualenvwrapper==4.3.1
