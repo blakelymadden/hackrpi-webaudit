@@ -9,10 +9,6 @@ html5lib==0.999
 itsdangerous==0.24
 reportlab==3.0
 requests==2.2.1
-sessioninstaller==0.0.0
 simplejson==3.6.5
-software-center-aptd-plugins==0.0.0
-system-service==0.1.6
 virtualenv==1.11.6
 virtualenvwrapper==4.3.1
-wsgiref==0.1.2
