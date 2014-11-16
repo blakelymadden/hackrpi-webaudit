@@ -29,16 +29,16 @@ class HTMLTagContentAggregator:
         tag_contents_list = re.findall(tag_re, self.html_file)
         return tag_contents_list
 
-    def map_links_to_tags(self):
-        links_to_contents = {}
+    def map_content_to_data(self):
+        contents_to_data = {}
         for tag in self.tags:
             tag_contents_list = self.retrieve_content_inside_all_tags(tag)
             for block in tag_contents_list:
-                links = re.findall(self.content, block)
-                for link in links:
-                    previous = links_to_contents.get(link)
+                blocks_with_content = re.findall(self.content, block)
+                for content_match in blocks_with_content:
+                    previous = contents_to_data.get(content_match)
                     if previous:
-                        links_to_contents[link] = previous.append(block)
+                        contents_to_data[content_match] = previous.append(block)
                     else:
-                        links_to_contents[link] = [block]
-        return links_to_contents
+                        contents_to_data[content_match] = [block]
+        return contents_to_data
